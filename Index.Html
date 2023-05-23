@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+      
+    <header>
+        <img class="logoalura" src="logoalura.png" alt="logo da alura">
+    </header>
+    <main>
+        <div class="container"> <!-- Foi adicionado uma "div container" para pode centralizar as section-->
+            <section class="entrada">  <!-- class entrada-->
+                <textarea name="digite seu texto" class="text-area" cols="40" rows="5"
+                    placeholder="digite seu texto"></textarea>
+
+                <div class="informacao">
+                    <h6>Somente letras minusculas</h6>
+                </div>
+
+                <div class="button">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                    <button class="btn-descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+                </div>
+            </section>
+
+            <section class="resultado"> <!-- class resultado-->
+                <textarea name="mensagem" class="mensagem" cols="20" rows="13"></textarea>
+                <button class="copiar" onclick="execCopy()">copiar</button>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>  
+</body>
+</html>
